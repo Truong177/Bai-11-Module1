@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // tam giac 1
+    // for (let i = 1; i <= 5 ; i++) {
+    //     for (let j = 0; j < i; j++) {
+    //         document.write(" * ");
+    //     }
+    //     document.write(" <br> ");
+    // }
+    //tam giac 2
+    // for (let i = 5; i >=1; i--) {
+    //   for (let j = 0; j < i; j++) {
+    //     document.write("*")
+    //   }
+    //   document.write("<br>")
+    // }
+    // Tam giac 3
+    // for (let i = 1; i <= 5; i++) {
+    //     for (let j = 0; j < (5-i); j++) {
+    //         document.write("&nbsp;&nbsp;")
+    //     }
+    //     for (let j = 0; j < i; j++) {
+    //         document.write("*")
+    //     }
+    //     document.write("<br>")
+    // }
+    // tam giac 4
+    for (let i = 5; i >= 1; i--) {
+        for (let j = 0; j < (5-i); j++) {
+            document.write("&nbsp;&nbsp;")
+        }
+        for (let j = 0; j < i; j++) {
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+</script>
+</body>
+</html>
