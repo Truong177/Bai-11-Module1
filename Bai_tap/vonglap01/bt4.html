@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let start = +prompt("Mời nhập vào số bắt đầu");
+    let number = +prompt("Mời nhập vào số lượng Fibonacci cần thiết");
+
+    while (count < number) {
+        if (checkFibonacci(start)) {
+            if(start % 5 === 0){
+                document.write(start + " ");
+                break;
+            }
+            count++;
+        }
+        start++;
+    }
+
+    function checkFibonacci(n) {
+        let a = 0;
+        let b = 1;
+        while (b <= n) {
+            if (b === n) {
+                return true;
+            }
+            let temp = a + b;
+            a = b;
+            b = temp;
+        }
+        return false;
+    }
+</script>
+</body>
+</html>

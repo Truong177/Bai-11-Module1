@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let start = +prompt('Nhập số bắt đầu :')
+    let number = +prompt('Nhập số lượng cần thiết ')
+    let sum = 0;
+    while (count < number){
+        if (start % 7 === 0){
+            sum += start;
+            count++
+        }
+        start++
+    }
+    document.write(sum)
+
+</script>
+</body>
+</html>
